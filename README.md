@@ -4,11 +4,7 @@ A beautiful full-stack MERN application for selling and purchasing online course
 
 ## 🌟 Live Demo
 
-| Component | URL |
-|-----------|-----|
-| **🚀 Frontend** | [https://course-selling-app2.netlify.app](https://course-selling-app2.netlify.app) |
-| **🔧 Backend API** | [https://course-selling-app-4-pscj.onrender.com](https://course-selling-app-4-pscj.onrender.com) |
-| **✅ Health Check** | [https://course-selling-app-4-pscj.onrender.com/health](https://course-selling-app-4-pscj.onrender.com/health) |
+**🚀 Live Website:** [https://course-selling-app2.netlify.app](https://course-selling-app2.netlify.app)
 
 ## ✨ Features
 
