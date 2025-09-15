@@ -65,7 +65,7 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: 'Something went wrong!' });
 });
 
-// 404 handler
+// ✅ ONLY ONE 404 HANDLER AT THE VERY END (CORRECT PLACEMENT)
 app.use((req, res) => {
   res.status(404).json({ message: 'Route not found' });
 });
