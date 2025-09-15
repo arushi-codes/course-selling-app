@@ -18,17 +18,18 @@ const Signup = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:3000/users/signup', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          username: formData.username,
-          password: formData.password
-        }),
-      });
+  const response = await fetch('https://course-selling-app-4-pscj.onrender.com/users/signup', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      username: formData.username,
+      password: formData.password
+    }),
+    });
 
+    
       const data = await response.json();
 
       if (!response.ok) {
