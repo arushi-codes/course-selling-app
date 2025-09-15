@@ -47,9 +47,6 @@ app.use(cors({
 }));
 app.use(express.json());
 
-// Handle preflight requests
-app.options('*', cors());
-
 // Routes
 app.use('/admin', adminRoutes);
 app.use('/users', userRoutes);
