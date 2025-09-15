@@ -1,22 +1,20 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:3000',
+  baseURL: 'https://course-selling-app-4-pscj.onrender.com', // ← HARDCODE IT
 });
 
 // Add token to requests automatically
 API.interceptors.request.use((config) => {
   const token = localStorage.getItem('token');
-  console.log('Token from localStorage:', token);
   if (token) {
-    config.headers.Authorization = `Bearer ${token}`; // ← "Authorization" not "Authorization"
-    console.log('Adding Authorization header:', config.headers.Authorization); // ← Debug log
-
+    config.headers.Authorization = `Bearer ${token}`;
   }
   return config;
 }, (error) => {
   return Promise.reject(error);
 });
+
 // ✅ CORRECTED EXPORTS - Use named exports
 // ✅ CORRECT - send credentials in request body
 export const adminLogin = (credentials) => API.post('/admin/login', credentials);
